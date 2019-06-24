@@ -201,15 +201,138 @@ main .central-col{
   display: flex;
 }
 
-.latest-deals-heading .fa-chevron-right, .latest-news-heading .fa-chevron-right {
+.funding-info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.funding-story-logo {
+  width: 6rem;
+  position: absolute;
+  top:11px;
+  left: 11px;
+}
+
+.funding-info ul {
+  display: flex;
+}
+
+.funding-story {
+  margin-right: 2.4rem;
+  flex: 1;
+  position: relative;
+}
+
+.funding-story h2 {
+  background-color: #f42;
+  color: white;
+  padding: .7rem;
+  font-size: 1.8rem;
+  padding-left: 8.4rem;
+}
+
+.funding-story h2:hover, .funding-round:hover, .funding-story-logo:hover{
+  cursor: pointer;
+} 
+
+.funding-round{
+  padding: 1.3rem;
+    padding-left: 8.4rem;
+    background-color: #feece9;
+    padding-top: 0.7rem;
+
+}
+
+.funding-round .funding-amount{
+  text-transform: uppercase;
+  color: black;
+  font-size: 1.7rem;
+  font-weight: bold;
+}
+
+.funding-round .funding-series{
+  text-transform: uppercase;
+  color: #777;
+  font-size: 1.2rem;
+  letter-spacing: .2px;
+  line-height: .8;
+}
+
+.funding-info ul li a{
+  margin-right: 1.3rem;
+  padding-right: 1.3rem;
+  border-right: 1px solid #f42;
+}
+
+div.funding-info {
+  margin-top: 6rem;
+}
+
+.funding-stories {
+  display: flex;
+}
+
+.investment-card{
+padding: 1.3rem 1.8rem;
+border-bottom: 1px solid #fcccc5;
+}
+
+.investment-card-value-1{
+  margin-bottom: .4rem;
+}
+
+
+.investment-icon {
+  margin-right: 1rem;  
+}
+
+.investment-card-value-1 a, .investment-card-value-2 a{
+  display: flex;
+  align-items: center;
+}
+
+.investment-achievement{
+  margin-top: 1rem;
+  padding-left: 1.8rem;
+}
+
+.investment-achievement a{
+  color: #666;
+  font-size: 1.2rem;
+}
+
+.investment-valuation {
+ color: #888;
+ font-size: 1.3rem;
+}
+
+.investment-icon {
+  color: #111;
+}
+
+.investment-valuation:hover{
+  color: #222;
+}
+
+.investment-achievement a:hover{
+  color: #555;
+  font-size: 1.2rem;
+}
+
+.investment-achievement span {
+  color: #bbb
+}
+
+.latest-deals-heading .fa-chevron-right, .latest-news-heading .fa-chevron-right, .funding-info .fa-chevron-right {
   font-size: 1.7rem;
 }
 
-.latest-deals .latest-deals-heading, .latest-news-heading{
+.latest-deals .latest-deals-heading, .latest-news-heading, .funding-info{
   margin: 1.8rem 0;
 }
 
-.latest-deals .latest-deals-heading a, .latest-news-heading a{
+.latest-deals .latest-deals-heading a, .latest-news-heading a, .funding-info a{
   color: #f42;
   font-size: 2.5rem;
   letter-spacing: .1px;
@@ -217,12 +340,12 @@ main .central-col{
   transition: all .1s; 
 }
 
-.latest-deals .latest-deals-heading h3 a{
+.latest-deals .latest-deals-heading h3 a, .funding-info ul a{
   font-size: 1.6rem;
   font-weight: normal;
 }
 
-.latest-deals .latest-deals-heading  a:hover, .latest-news-heading  a:hover {
+.latest-deals .latest-deals-heading  a:hover, .latest-news-heading  a:hover, .funding-info a:hover {
   color: #111;
   cursor: pointer;
 }
