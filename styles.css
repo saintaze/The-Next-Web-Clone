@@ -1,10 +1,13 @@
 @import url(//db.onlinewebfonts.com/c/5c773d1586db24bd45dfd4af3a4542e7?family=Shentox);
 
 @font-face {
-  font-family: 'Maquette-Regular';
-  src: url('./fonts/ars-maquette-regular.woff') format('woff'), /* Pretty Modern Browsers */
+  font-family: 'Maquetteregular';
+  src: url('./fonts/ars-maquette-regular.woff') format('woff'), /* Pretty Modern Browsers */     
+}
 
-      
+@font-face {
+  font-family: 'Avalon-Bold';
+  src: url('./fonts/avalon-bold.woff') format('woff'), /* Pretty Modern Browsers */     
 }
 
 * {
@@ -124,3 +127,145 @@ nav .nav-top .active {
 }
 
 
+main .central-col{
+  max-width: 80vw;
+  margin: 0 auto;
+}
+
+.latest-deals-heading{
+  display: flex;
+  justify-content: space-between;
+}
+
+.latest-deals-heading .fa-chevron-right {
+  font-size: 1.7rem;
+}
+
+.latest-deals .latest-deals-heading{
+  margin: 1.8rem 0;
+}
+
+.latest-deals .latest-deals-heading a{
+  color: #f42;
+  font-size: 2.5rem;
+  letter-spacing: .1px;
+  font-weight: bold;
+  transition: all .1s; 
+}
+
+.latest-deals .latest-deals-heading h3 a{
+  font-size: 1.6rem;
+  font-weight: normal;
+}
+
+.latest-deals .latest-deals-heading  a:hover {
+  color: #111;
+  cursor: pointer;
+}
+
+.latest-deals .latest-deals-cards{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 2.4rem;
+}
+
+.latest-deals-card .latest-deal-image {
+  position: relative;
+}
+
+.latest-deals-card .discount-banner{
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 8rem;
+  width: 8rem;
+  background-image: url(./images/deals-ribbon.svg);
+  background-repeat: no-repeat;
+}
+
+.latest-deals-card .discount-banner-text {
+  font-size: 1.4rem;
+  transform: rotate(45deg);
+  position: absolute;
+  top: 2rem;
+  right: 1px;
+  font-weight: 800;
+  letter-spacing: -.3px;
+}
+
+.latest-deals-card .latest-deal-image a{
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 20rem;
+  display: block;
+}
+
+.latest-deals-card .latest-deal-heading{
+  line-height: 1.2;
+  margin-top: .8rem;
+}
+
+.latest-deals-card .latest-deal-heading a{
+  color: #111;
+  font-size: 1.6rem;
+  font-family: inherit;
+  letter-spacing: .2px;
+  transition: all .1s;
+}
+
+.latest-deals-card .latest-deal-heading a:hover{
+  color: #f42;
+  text-decoration: underline;
+}
+
+.latest-deal-value {
+  display: flex;
+  align-items: center;
+
+}
+
+.latest-deal-value .latest-deal-old-price{
+  color: #aaa;
+  text-decoration: line-through; 
+  font-size: 1.3rem;
+  margin-right: .7rem;
+  font-weight: normal;
+}
+
+.latest-deal-value .latest-deal-new-price {
+  color: #666;
+  font-size: 1.7rem;
+}
+
+
+.latest-deals-card-1 .latest-deal-image a{
+  background-image: url("https://cdnp0.stackassets.com/91aa0041a1c31e2daa8074c5a64d7d3d942ba825/store/f370dc372f173b2fb63f60eafc441180db6986fafb7508518bbcadb9dc39/sale_19566_primary_image.jpg");
+}
+
+.latest-deals-card-2 .latest-deal-image a{
+  background-image: url("https://cdnp0.stackassets.com/a659172a9b15de96a1b502d26c5196e0c961b5ba/store/1478a0851c7032d79e041177e133cc8ebd3a740e2cfeff1a77dc32dadc54/sale_19898_primary_image.jpg");
+}
+
+.latest-deals-card-3 .latest-deal-image a{
+  background-image: url("https://cdnp2.stackassets.com/7467ed773c2aa65269e2af6b4a76ca771714a699/store/b697556c143915c0748db1cccd8553e5328fd4d212a4ad29b60600e3713c/sale_10976_primary_image.jpg");
+}
+
+.latest-deals-card-4 .latest-deal-image a{
+  background-image: url("https://cdnp1.stackassets.com/6aca4df9cf2f1cf175f1fbc29f8614e891f733b7/store/992819cbbcfc1a56589ebb755ea7f350202685ddd784dfd361613556b596/sale_19942_primary_image.jpg");
+}
+
+.latest-deals-card-5 .latest-deal-image a{
+  background-image: url("https://cdnp1.stackassets.com/9d07cf31260de67cc7cb2feae4c5f6cb8e875352/store/2db090e3b8c295e1daafb9e25ad6fe17c3a12814b975d447b5ca21eeb9ef/sale_19939_primary_image2.jpg");
+}
+
+.latest-deals-card-6 .latest-deal-image a{
+  background-image: url("https://cdnp2.stackassets.com/2de045f5c08675c61ee700230f0604fdd2e3e557/store/385003e89ed9c8e0938a35490994921cbd3a1c1ecde92e3f84376549f152/sale_18127_primary_image.jpg");
+}
+
+.latest-deals-card-7 .latest-deal-image a{
+  background-image: url("https://cdnp0.stackassets.com/b11c1ceea51d735586259e5ad30e9da08c50a3ad/store/066c956b57a2603c49ebdf774b022c1361486789eb9cc2a04559e8804830/sale_19825_primary_image.jpg");
+}
+
+.latest-deals-card-8 .latest-deal-image a{
+  background-image: url("https://cdnp3.stackassets.com/510e0cc334c331f6c55fa44136342a63628884f9/store/e883e434858ae3d1813b49073997f7eb0a59d1e75176836f550fa70a0e83/sale_19856_primary_image.jpg");
+}
