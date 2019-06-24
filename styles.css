@@ -132,20 +132,84 @@ main .central-col{
   margin: 0 auto;
 }
 
+.latest-news-article-image a{
+  display: block;
+  height: 13.5rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.latest-news-article-1 .latest-news-article-image a{
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/sale_19367_primary_image_wide-540x270.jpg");
+}
+
+.latest-news-article-2 .latest-news-article-image a{
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/RP4-514x270.jpg");
+}
+
+.latest-news-article-3 .latest-news-article-image a{
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Untitled-design72-516x270.png");
+}
+
+.latest-news-article-4 .latest-news-article-image a{
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/logitech-516x270.png");
+}
+
+.latest-news-article-5 .latest-news-article-image a{
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/sale_16881_primary_image_wide-540x270.jpg");
+}
+
+.latest-news-article-6 .latest-news-article-image a{
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/hackerhand1200-516x270.png");
+}
+
+.latest-news-article-7 .latest-news-article-image a{
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/sale_19895_primary_image_wide-540x270.jpg");
+}
+
+.latest-news-article-8 .latest-news-article-image a{
+  background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Alibaba1200-516x270.png");
+}
+
 .latest-deals-heading{
   display: flex;
   justify-content: space-between;
 }
 
-.latest-deals-heading .fa-chevron-right {
+.latest-news-article-byline {
+  margin-top: .5rem;
+}
+.latest-news-article-byline li, .latest-news-article-byline li a {
+  display: flex;
+  color: #aaa;
+  font-size: 1.3rem;
+  font-weight: normal;
+  transition: all .1s;
+}
+
+.latest-news-article-byline li a:hover{
+  color: #666;
+}
+
+.byline-separator{
+  display: inline-block; 
+  margin: 0px 0.4rem;
+  margin-top: -3px;
+}
+
+.latest-news-article-byline {
+  display: flex;
+}
+
+.latest-deals-heading .fa-chevron-right, .latest-news-heading .fa-chevron-right {
   font-size: 1.7rem;
 }
 
-.latest-deals .latest-deals-heading{
+.latest-deals .latest-deals-heading, .latest-news-heading{
   margin: 1.8rem 0;
 }
 
-.latest-deals .latest-deals-heading a{
+.latest-deals .latest-deals-heading a, .latest-news-heading a{
   color: #f42;
   font-size: 2.5rem;
   letter-spacing: .1px;
@@ -158,12 +222,12 @@ main .central-col{
   font-weight: normal;
 }
 
-.latest-deals .latest-deals-heading  a:hover {
+.latest-deals .latest-deals-heading  a:hover, .latest-news-heading  a:hover {
   color: #111;
   cursor: pointer;
 }
 
-.latest-deals .latest-deals-cards{
+.latest-deals .latest-deals-cards, .latest-news-articles{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2.4rem;
@@ -200,12 +264,12 @@ main .central-col{
   display: block;
 }
 
-.latest-deals-card .latest-deal-heading{
+.latest-deals-card .latest-deal-heading, .latest-news-article-heading{
   line-height: 1.2;
   margin-top: .8rem;
 }
 
-.latest-deals-card .latest-deal-heading a{
+.latest-deals-card .latest-deal-heading a, .latest-news-article-heading a{
   color: #111;
   font-size: 1.6rem;
   font-family: inherit;
@@ -213,9 +277,9 @@ main .central-col{
   transition: all .1s;
 }
 
-.latest-deals-card .latest-deal-heading a:hover{
+.latest-deals-card .latest-deal-heading a:hover, .latest-news-article-heading a:hover{
   color: #f42;
-  text-decoration: underline;
+  text-decoration: underline rgba(255, 83, 34, 0.3);
 }
 
 .latest-deal-value {
@@ -269,3 +333,87 @@ main .central-col{
 .latest-deals-card-8 .latest-deal-image a{
   background-image: url("https://cdnp3.stackassets.com/510e0cc334c331f6c55fa44136342a63628884f9/store/e883e434858ae3d1813b49073997f7eb0a59d1e75176836f550fa70a0e83/sale_19856_primary_image.jpg");
 }
+
+.footer-top {
+  background-color: #131313;
+  padding: 4rem;
+  margin-top: 6rem;
+}
+
+.footer-top .social-links {
+  display: flex;
+  justify-content: center;
+}
+
+.footer-top .social-links li{
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  background-color: #2f2f2f;
+  margin-right: 1.6rem;
+  position: relative;
+  transition: all .1s;
+}
+
+.footer-top .social-links li:hover{
+  background-color: transparent;
+  border: 2px solid rgba(51, 51, 51, .8);
+  cursor: pointer;
+}
+
+.footer-top .social-links li a {
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 1.8rem;
+}
+
+.footer-top .nav-links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2.7rem;
+  line-height: 1.1;
+}
+
+.footer-top .nav-links li a{
+  color: #999;
+  text-transform: uppercase;
+  font-size: 1.3rem;
+  margin-right: 1.7rem;
+  font-family: Shentox;
+  transition: all .1s;
+
+}
+.footer-top .nav-links li:hover a{
+  color: rgba(255,255,255, .8);
+}
+
+.footer-bottom{
+  padding: 4rem;
+  background-color: black;
+  color: #999;
+  text-align: center;
+  font-size: 1.3rem;
+  letter-spacing: .2px;
+}
+
+.footer-bottom .heart{
+  color: #f42;
+}
+
+.footer-bottom img {
+  width: 3.7rem;
+}
+
+.footer-bottom .tnw-logo {
+  margin-right: 1px;
+}
+
+.footer-bottom .stackpath-logo {
+  width: 6.8rem;
+}
+
+
