@@ -125,7 +125,21 @@ nav .nav-top .active {
   font-size: 1.3rem;
   letter-spacing: .3px;
 }
-
+.banner-articles{
+  display: grid;
+  grid-template-columns: 3fr 1fr; 
+  grid-template-areas: 'banner-1   banner-2'
+                        'banner-1  banner-3';
+}
+.banner-article-1{
+  grid-area: banner-1;
+}
+.banner-articles-2{
+  grid-area: banner-2;
+}
+.banner-articles-3{
+  grid-area: banner-3;
+}
 
 main .central-col{
   max-width: 80vw;
