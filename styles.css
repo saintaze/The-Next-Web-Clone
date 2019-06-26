@@ -507,20 +507,188 @@ div.funding-info {
   color: #bbb;
 }
 
+.news-cards{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 10px;
+  margin: 20px 0px;
+}
+.news-card{
+  margin-bottom: 24px;
+}
+.news-card .news-card-header{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 14px 12px;
+    height: 276px;
+    color: white;
+}
+.news-card .news-card-header a {
+  text-decoration: none;
+  color: white;
+}
+.news-card .news-card-header h5 {
+  font-family: Shentox;
+  font-size: 14px;
+}
+.news-card .news-card-header h3 {
+  font-family: Avalon-Bold;
+  font-size: 20px;
+  line-height: 1.1;
+}
+.news-card .news-card-header .news-card-byline {
+  display: flex;
+  list-style: none;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.news-card .news-card-header .news-card-byline span {
+  margin-left: 8px;
+}
+.news-card-1 header{
+  background: url(./images/image-gradient.png) no-repeat 50% 50%,
+  url(./images/Vivo-charging-hed-368x276.jpg);
+  background-size: cover;
+}
+.news-card-2 header{
+  background: url(./images/image-gradient.png) no-repeat 50% 50%,
+  url(./images/europol-cryptocurrency-cybercrime-game-blockchain-investigation-crime-criminal-2-480x270.png);
+  background-size: cover;
+}
+.news-card-3 header{
+  background: url(./images/image-gradient.png) no-repeat 50% 50%,
+  url(./images/firefox-stop-cryptojacking-bitcoin-mining-cryptocurrency-monero-blockchain-mozilla.jpg);
+  background-size: cover;
+}
+.news-card-4 header{
+  background: url(./images/image-gradient.png) no-repeat 50% 50%,
+  url(./images/Hook-Champ-Game-Club.jpg);
+  background-size: cover;
+}
+.news-card-5 header{
+  background: url(./images/image-gradient.png) no-repeat 50% 50%,
+  url(./images/Overwatch-Lootbox.jpg);
+  background-size: cover;
+}
+.news-card-6 header{
+  background: url(./images/image-gradient.png) no-repeat 50% 50%,
+  url(./images/Add-a-little-bit-of-body-text-796x417.png);
+  background-size: cover;
+}
+.news-card-7 header{
+  background: url(./images/image-gradient.png) no-repeat 50% 50%,
+  url(./images/Untitled-design-45-516x270.jpg);
+  background-size: cover;
+}
+.news-card-8 header{
+  background: url(./images/image-gradient.png) no-repeat 50% 50%,
+  url(./images/ibmcloudannotations-368x276.jpg);
+  background-size: cover;
+}
+
+.news-card-flash{
+ display: flex;
+ justify-content: space-between;
+ height: 96px;
+ margin: 2px 0px;
+     background-color: rgba(255,68,34,.06);
+}
+.flash-wrapper{
+  width: 244px;
+  padding: 10px 14px 0px;
+}
+.news-card-flash h5, .news-card-flash h3{
+  font-size: 13px;
+  width: 244px;
+  color: #f42;
+}
+.news-card-flash h3 a{
+  font-size: 14px;
+  width: 244px;
+  color: #f42;
+  line-height: 1.1;
+}
+.news-card-flash .news-card-image{
+  width: 96px;
+  height: 96px;
+}
+
+.news-card-1 .news-card-flash .news-card-image{
+  background-image: url(./images/satoshitreasure-1.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.news-card-2 .news-card-flash .news-card-image{
+  background-image: url(./images/image-4-796x417.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.news-card-3 .news-card-flash .news-card-image{
+  background-image: url(./images/ios-header-image-cool-calculator-796x417.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.news-card-4 .news-card-flash .news-card-image{
+  background-image: url(./images/europol-cryptocurrency-cybercrime-game-blockchain-investigation-crime-criminal-2-480x270.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.news-card-5 .news-card-flash .news-card-image{
+  background-image: url(./images/Myspace-796x418.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.news-card-6 .news-card-flash .news-card-image{
+  background-image: url(./images/Overwatch-Lootbox.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.news-card-7 .news-card-flash .news-card-image{
+  background-image: url(./images/Vivo-charging-hed-368x276.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.news-card-8 .news-card-flash .news-card-image{
+  background-image: url(./images/ios13-513x270.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.news-feed{
+  list-style: square;
+  color: #f42;
+  margin: 12px;
+  padding-left: 12px;
+}
+.news-feed li {
+  padding: 6px 0px 6px 14px;
+  border-bottom: solid 1px rgba(228, 228, 228, 0.6)
+}
+.news-feed a{
+  text-decoration: none;
+  color: #555;
+  font-size: 13px;
+  font-family: Maquetteregular;
+}
+
 .latest-deals-heading .fa-chevron-right,
 .latest-news-heading .fa-chevron-right,
+.news-card-heading .fa-chevron-right, 
 .funding-info .fa-chevron-right {
   font-size: 1.7rem;
 }
 
 .latest-deals .latest-deals-heading,
 .latest-news-heading,
+.news-card-heading, 
 .funding-info {
   margin: 1.8rem 0;
 }
 
 .latest-deals .latest-deals-heading a,
 .latest-news-heading a,
+.news-card-heading a,
 .funding-info a {
   color: #f42;
   font-size: 2.5rem;
@@ -537,6 +705,7 @@ div.funding-info {
 
 .latest-deals .latest-deals-heading a:hover,
 .latest-news-heading a:hover,
+.news-card-heading a:hover,
 .funding-info a:hover {
   color: #111;
   cursor: pointer;
