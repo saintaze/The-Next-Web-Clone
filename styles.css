@@ -205,7 +205,7 @@ nav .nav-top .active {
   z-index: 5;
 }
 
-.banner-article-1 time {
+.banner-article-1 .banner-article-date {
   color: white;
   font-family: Maquetteregular;
   font-family: 14px;
@@ -966,7 +966,7 @@ div.funding-info {
     border-left: 1px solid #eee;
     padding: 1.2rem 1.8rem;
   }
-  .nav-bottom-menu{
+  .nav-bottom-menu {
     display: block;
     color: #f54;
   }
@@ -986,7 +986,7 @@ div.funding-info {
   .banner-article {
     min-height: 30vh;
   }
-  .banner-article-1 time {
+  .banner-article-1 .banner-article-date {
     display: none;
   }
   .banner-article-1 header h2,
@@ -1001,6 +1001,7 @@ div.funding-info {
   main .central-col {
     max-width: 90vw;
   }
+
   /* funding start */
   .funding-info,
   .funding-stories {
@@ -1022,10 +1023,28 @@ div.funding-info {
   .news-cards {
     grid-template-columns: 1fr;
   }
-  /* lastest deal start */
+  /* lastest news and lastest deal start */
   .latest-deals .latest-deals-cards,
   .latest-news-articles {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .latest-news-article,
+  .latest-deals-card {
+    display: flex;
+    min-height: 75px;
+  }
+  .latest-news-article .latest-news-article-image a,
+  .latest-deals-card .latest-deal-image a {
+    width: 75px;
+    height: 75px;
+  }
+  .latest-news-article header,
+  .latest-deals-card header {
+    width: 100%;
+    padding: 0px 0px 0px 18px;
+  }
+  .discount-banner {
+    display: none;
   }
   /* footer start */
   .footer-top #team-link {
