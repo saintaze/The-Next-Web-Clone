@@ -1,4 +1,3 @@
-@import url(//db.onlinewebfonts.com/c/5c773d1586db24bd45dfd4af3a4542e7?family=Shentox);
 
 @font-face {
   font-family: "Maquetteregular";
@@ -8,6 +7,10 @@
 @font-face {
   font-family: "Avalon-Bold";
   src: url("./fonts/avalon-bold.woff") format("woff"); /* Pretty Modern Browsers */
+}
+@font-face {
+  font-family: "Shentox";
+  src: url("./fonts/ShentoxMedium.ttf") format("truetype"); 
 }
 
 * {
