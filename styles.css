@@ -69,7 +69,6 @@ nav .nav-top {
 
 nav .nav-top li {
   margin-right: 1.2rem;
-  transition: all 0.1;
 }
 
 nav .nav-top li:hover a {
@@ -208,7 +207,7 @@ nav .nav-top .active {
 .banner-article-1 .banner-article-date {
   color: white;
   font-family: Maquetteregular;
-  font-family: 14px;
+  font-size: 14px;
   position: absolute;
   top: 16px;
   right: 24px;
@@ -252,7 +251,6 @@ nav .nav-top .active {
   margin-left: 4px;
 }
 .banner-article-byline li .icon {
-  scale: 0.875;
   float: left;
   margin-right: 4px;
   opacity: 0.6;
