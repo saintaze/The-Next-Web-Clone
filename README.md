@@ -13,5 +13,5 @@ URL: [The Next Web](https://thenextweb.com/)
 + Saintaze [@saintaze](https://github.com/saintaze/)
 + Imhtapm [@imhtapm](https://github.com/imhtapm)
 
-# Github Page
-Live Version: 
+# Preview
+[Live Version](https://the-next-web-clone.imhta.now.sh)
