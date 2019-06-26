@@ -1,13 +1,13 @@
 @import url(//db.onlinewebfonts.com/c/5c773d1586db24bd45dfd4af3a4542e7?family=Shentox);
 
 @font-face {
-  font-family: 'Maquetteregular';
-  src: url('./fonts/ars-maquette-regular.woff') format('woff'), /* Pretty Modern Browsers */     
+  font-family: "Maquetteregular";
+  src: url("./fonts/ars-maquette-regular.woff") format("woff"); /* Pretty Modern Browsers */
 }
 
 @font-face {
-  font-family: 'Avalon-Bold';
-  src: url('./fonts/avalon-bold.woff') format('woff'), /* Pretty Modern Browsers */     
+  font-family: "Avalon-Bold";
+  src: url("./fonts/avalon-bold.woff") format("woff"); /* Pretty Modern Browsers */
 }
 
 * {
@@ -36,37 +36,58 @@ a {
   text-decoration: none;
 }
 
+.icon {
+  display: block;
+  background: transparent url(./images/icons-sprite.svg) no-repeat;
+  background-size: 1296px 1296px;
+  background-position: 1296px 1296px;
+  width: 16px;
+  height: 16px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+}
+
+.icon--clock--light {
+  background-position: -160px -160px;
+}
+.icon--share--light {
+  background-position: -912px -912px;
+}
+
+/* Non global started */
 
 
-nav .nav-top{
+nav .nav-top {
   font-size: 1.3rem;
   background-color: #222;
   display: flex;
-  padding: .6rem 2.1rem;
+  padding: 0.6rem 2.1rem;
   align-items: center;
 }
 
 nav .nav-top li {
   margin-right: 1.2rem;
-  transition: all .1;
+  transition: all 0.1;
 }
 
-nav .nav-top li:hover a{
-  color: rgba(255, 255, 255, .9);
+nav .nav-top li:hover a {
+  color: rgba(255, 255, 255, 0.9);
 }
-
 
 nav .nav-top a {
- color: #888;
- font-family: Helvetica;
- letter-spacing: .2px;
+  color: #888;
+  font-family: Helvetica;
+  letter-spacing: 0.2px;
 }
 
 nav .nav-top .active {
-  color: rgba(255, 255, 255, .9);
+  color: rgba(255, 255, 255, 0.9);
 }
 
-.nav-bottom{
+.nav-bottom {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -89,7 +110,7 @@ nav .nav-top .active {
   letter-spacing: 0.7px;
   font-family: Shentox;
   font-weight: bold;
-  transition: all .1s;
+  transition: all 0.1s;
 }
 
 .nav-bottom-links li a:hover {
@@ -102,111 +123,258 @@ nav .nav-top .active {
   padding: 1.6rem 1.8rem;
 }
 
-.nav-bottom-search .fa-search{
+.nav-bottom-search .fa-search {
   color: #bbb;
   transform: rotate(90deg);
   font-size: 1.7rem;
-  transition: all .1s;
+  transition: all 0.1s;
 }
 
-.nav-bottom-search:hover{
+.nav-bottom-search:hover {
   cursor: pointer;
 }
 
-.nav-bottom-search:hover .fa-search{
+.nav-bottom-search:hover .fa-search {
   color: #777;
 }
 
-
 .podcast-promotion {
   background-color: #fcdc33;
-  padding: .4rem 1.8rem;
+  padding: 0.4rem 1.8rem;
   color: #111;
   font-size: 1.3rem;
-  letter-spacing: .3px;
-}
-.banner-articles{
-  display: grid;
-  grid-template-columns: 3fr 1fr; 
-  grid-template-areas: 'banner-1   banner-2'
-                        'banner-1  banner-3';
-}
-.banner-article-1{
-  grid-area: banner-1;
-}
-.banner-articles-2{
-  grid-area: banner-2;
-}
-.banner-articles-3{
-  grid-area: banner-3;
+  letter-spacing: 0.3px;
 }
 
-main .central-col{
+/* navs ends */
+
+/* banner started */
+.banner-articles {
+  display: grid;
+  height: 80vh;
+  max-height: 544px;
+  grid-template-columns: 2fr 1fr;
+  grid-template-areas:
+    "banner-1   banner-2"
+    "banner-1  banner-3";
+  grid-gap: 8px;
+  padding: 2px 8px 8px 8px;
+}
+
+.banner-article-1 {
+  grid-area: banner-1;
+  background: url(./images/image-gradient.png) no-repeat 50% 50%,
+    url(./images/Add-a-little-bit-of-body-text-796x417.png);
+  background-size: cover;
+  position: relative;
+  padding: 60px 0px 50px;
+}
+.cover-gradient {
+  background: transparent url(../images/cover-gradient.png) no-repeat;
+  background-position: 0 0;
+  background-size: cover;
+  bottom: 0px;
+  left: 0px;
+  mix-blend-mode: lighten;
+  pointer-events: none;
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  z-index: 4;
+}
+.cover-logo {
+  background: transparent url(../images/tnw.svg) no-repeat;
+  background-size: contain;
+  left: 24px;
+  max-width: 50%;
+  height: 100%;
+  max-height: 112px;
+  line-height: 1;
+  top: 24px;
+  pointer-events: none;
+  text-align: right;
+  color: #fff;
+  position: absolute;
+  right: 24px;
+  z-index: 5;
+}
+
+.banner-article-1 time {
+  color: white;
+  font-family: Maquetteregular;
+  font-family: 14px;
+  position: absolute;
+  top: 16px;
+  right: 24px;
+}
+.banner-article-1 header {
+  bottom: 4px;
+  left: 4px;
+  padding: 14px 12px;
+  position: absolute;
+  right: 4px;
+  z-index: 3;
+  color: white;
+}
+.banner-article-1 header a {
+  text-decoration: none;
+  color: white;
+}
+.banner-article-1 header h5 {
+  font-family: Shentox;
+  font-size: 14px;
+}
+.banner-article-1 header h2 {
+  font-family: Avalon-Bold;
+  font-size: 56px;
+  line-height: 1.1;
+}
+.banner-article-byline {
+  display: flex;
+  list-style: none;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.banner-article-byline a {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.banner-article-byline a:hover {
+  color: rgba(255, 255, 255);
+}
+.banner-article-byline li {
+  margin-left: 4px;
+}
+.banner-article-byline li .icon {
+  scale: 0.875;
+  float: left;
+  margin-right: 4px;
+  opacity: 0.6;
+  vertical-align: middle;
+}
+
+.banner-article-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  grid-area: banner-2;
+  background: url(./images/image-gradient.png) no-repeat 50% 50%,
+    url(./images/Myspace-796x418.jpg);
+  background-size: cover;
+}
+.banner-article-3 {
+  grid-area: banner-3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background: url(./images/image-gradient.png) no-repeat 50% 50%,
+    url(./images/satoshitreasure-1.png);
+  background-size: cover;
+}
+
+.banner-article-2 header,
+.banner-article-3 header {
+  padding: 14px 12px;
+  right: 4px;
+  z-index: 3;
+  color: white;
+}
+
+.banner-article-2 header a,
+.banner-article-3 header a {
+  text-decoration: none;
+  color: white;
+}
+.banner-article-2 header h5,
+.banner-article-3 header h5 {
+  font-family: Shentox;
+  font-size: 14px;
+}
+.banner-article-2 header h2,
+.banner-article-3 header h2 {
+  font-family: Avalon-Bold;
+  font-size: 28px;
+  line-height: 1.1;
+}
+.banner-article-1 .banner-article-byline a,
+.banner-article-2 .banner-article-byline a,
+.banner-article-3 .banner-article-byline a {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+.banner-article-1 .banner-article-byline a:hover,
+.banner-article-2 .banner-article-byline a:hover,
+.banner-article-3 .banner-article-byline a:hover {
+  color: rgba(255, 255, 255);
+}
+
+main .central-col {
   max-width: 80vw;
   margin: 0 auto;
 }
 
-.latest-news-article-image a{
+.latest-news-article-image a {
   display: block;
   height: 13.5rem;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.latest-news-article-1 .latest-news-article-image a{
+.latest-news-article-1 .latest-news-article-image a {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/sale_19367_primary_image_wide-540x270.jpg");
 }
 
-.latest-news-article-2 .latest-news-article-image a{
+.latest-news-article-2 .latest-news-article-image a {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/RP4-514x270.jpg");
 }
 
-.latest-news-article-3 .latest-news-article-image a{
+.latest-news-article-3 .latest-news-article-image a {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Untitled-design72-516x270.png");
 }
 
-.latest-news-article-4 .latest-news-article-image a{
+.latest-news-article-4 .latest-news-article-image a {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/logitech-516x270.png");
 }
 
-.latest-news-article-5 .latest-news-article-image a{
+.latest-news-article-5 .latest-news-article-image a {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/sale_16881_primary_image_wide-540x270.jpg");
 }
 
-.latest-news-article-6 .latest-news-article-image a{
+.latest-news-article-6 .latest-news-article-image a {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/hackerhand1200-516x270.png");
 }
 
-.latest-news-article-7 .latest-news-article-image a{
+.latest-news-article-7 .latest-news-article-image a {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/sale_19895_primary_image_wide-540x270.jpg");
 }
 
-.latest-news-article-8 .latest-news-article-image a{
+.latest-news-article-8 .latest-news-article-image a {
   background-image: url("https://cdn0.tnwcdn.com/wp-content/blogs.dir/1/files/2019/06/Alibaba1200-516x270.png");
 }
 
-.latest-deals-heading{
+.latest-deals-heading {
   display: flex;
   justify-content: space-between;
 }
 
 .latest-news-article-byline {
-  margin-top: .5rem;
+  margin-top: 0.5rem;
 }
-.latest-news-article-byline li, .latest-news-article-byline li a {
+.latest-news-article-byline li,
+.latest-news-article-byline li a {
   display: flex;
   color: #aaa;
   font-size: 1.3rem;
   font-weight: normal;
-  transition: all .1s;
+  transition: all 0.1s;
 }
 
-.latest-news-article-byline li a:hover{
+.latest-news-article-byline li a:hover {
   color: #666;
 }
 
-.byline-separator{
-  display: inline-block; 
+.byline-separator {
+  display: inline-block;
   margin: 0px 0.4rem;
   margin-top: -3px;
 }
@@ -215,7 +383,7 @@ main .central-col{
   display: flex;
 }
 
-.funding-info{
+.funding-info {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -224,7 +392,7 @@ main .central-col{
 .funding-story-logo {
   width: 6rem;
   position: absolute;
-  top:11px;
+  top: 11px;
   left: 11px;
 }
 
@@ -241,39 +409,40 @@ main .central-col{
 .funding-story h2 {
   background-color: #f42;
   color: white;
-  padding: .7rem;
+  padding: 0.7rem;
   font-size: 1.8rem;
   padding-left: 8.4rem;
 }
 
-.funding-story h2:hover, .funding-round:hover, .funding-story-logo:hover{
+.funding-story h2:hover,
+.funding-round:hover,
+.funding-story-logo:hover {
   cursor: pointer;
-} 
-
-.funding-round{
-  padding: 1.3rem;
-    padding-left: 8.4rem;
-    background-color: #feece9;
-    padding-top: 0.7rem;
-
 }
 
-.funding-round .funding-amount{
+.funding-round {
+  padding: 1.3rem;
+  padding-left: 8.4rem;
+  background-color: #feece9;
+  padding-top: 0.7rem;
+}
+
+.funding-round .funding-amount {
   text-transform: uppercase;
   color: black;
   font-size: 1.7rem;
   font-weight: bold;
 }
 
-.funding-round .funding-series{
+.funding-round .funding-series {
   text-transform: uppercase;
   color: #777;
   font-size: 1.2rem;
-  letter-spacing: .2px;
-  line-height: .8;
+  letter-spacing: 0.2px;
+  line-height: 0.8;
 }
 
-.funding-info ul li a{
+.funding-info ul li a {
   margin-right: 1.3rem;
   padding-right: 1.3rem;
   border-right: 1px solid #f42;
@@ -287,84 +456,94 @@ div.funding-info {
   display: flex;
 }
 
-.investment-card{
-padding: 1.3rem 1.8rem;
-border-bottom: 1px solid #fcccc5;
+.investment-card {
+  padding: 1.3rem 1.8rem;
+  border-bottom: 1px solid #fcccc5;
 }
 
-.investment-card-value-1{
-  margin-bottom: .4rem;
+.investment-card-value-1 {
+  margin-bottom: 0.4rem;
 }
-
 
 .investment-icon {
-  margin-right: 1rem;  
+  margin-right: 1rem;
 }
 
-.investment-card-value-1 a, .investment-card-value-2 a{
+.investment-card-value-1 a,
+.investment-card-value-2 a {
   display: flex;
   align-items: center;
 }
 
-.investment-achievement{
+.investment-achievement {
   margin-top: 1rem;
   padding-left: 1.8rem;
 }
 
-.investment-achievement a{
+.investment-achievement a {
   color: #666;
   font-size: 1.2rem;
 }
 
 .investment-valuation {
- color: #888;
- font-size: 1.3rem;
+  color: #888;
+  font-size: 1.3rem;
 }
 
 .investment-icon {
   color: #111;
 }
 
-.investment-valuation:hover{
+.investment-valuation:hover {
   color: #222;
 }
 
-.investment-achievement a:hover{
+.investment-achievement a:hover {
   color: #555;
   font-size: 1.2rem;
 }
 
 .investment-achievement span {
-  color: #bbb
+  color: #bbb;
 }
 
-.latest-deals-heading .fa-chevron-right, .latest-news-heading .fa-chevron-right, .funding-info .fa-chevron-right {
+.latest-deals-heading .fa-chevron-right,
+.latest-news-heading .fa-chevron-right,
+.funding-info .fa-chevron-right {
   font-size: 1.7rem;
 }
 
-.latest-deals .latest-deals-heading, .latest-news-heading, .funding-info{
+.latest-deals .latest-deals-heading,
+.latest-news-heading,
+.funding-info {
   margin: 1.8rem 0;
 }
 
-.latest-deals .latest-deals-heading a, .latest-news-heading a, .funding-info a{
+.latest-deals .latest-deals-heading a,
+.latest-news-heading a,
+.funding-info a {
   color: #f42;
   font-size: 2.5rem;
-  letter-spacing: .1px;
+  letter-spacing: 0.1px;
   font-weight: bold;
-  transition: all .1s; 
+  transition: all 0.1s;
 }
 
-.latest-deals .latest-deals-heading h3 a, .funding-info ul a{
+.latest-deals .latest-deals-heading h3 a,
+.funding-info ul a {
   font-size: 1.6rem;
   font-weight: normal;
 }
 
-.latest-deals .latest-deals-heading  a:hover, .latest-news-heading  a:hover, .funding-info a:hover {
+.latest-deals .latest-deals-heading a:hover,
+.latest-news-heading a:hover,
+.funding-info a:hover {
   color: #111;
   cursor: pointer;
 }
 
-.latest-deals .latest-deals-cards, .latest-news-articles{
+.latest-deals .latest-deals-cards,
+.latest-news-articles {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-gap: 2.4rem;
@@ -374,7 +553,7 @@ border-bottom: 1px solid #fcccc5;
   position: relative;
 }
 
-.latest-deals-card .discount-banner{
+.latest-deals-card .discount-banner {
   position: absolute;
   top: 0;
   right: 0;
@@ -391,30 +570,33 @@ border-bottom: 1px solid #fcccc5;
   top: 2rem;
   right: 1px;
   font-weight: 800;
-  letter-spacing: -.3px;
+  letter-spacing: -0.3px;
 }
 
-.latest-deals-card .latest-deal-image a{
+.latest-deals-card .latest-deal-image a {
   background-repeat: no-repeat;
   background-size: cover;
   height: 20rem;
   display: block;
 }
 
-.latest-deals-card .latest-deal-heading, .latest-news-article-heading{
+.latest-deals-card .latest-deal-heading,
+.latest-news-article-heading {
   line-height: 1.2;
-  margin-top: .8rem;
+  margin-top: 0.8rem;
 }
 
-.latest-deals-card .latest-deal-heading a, .latest-news-article-heading a{
+.latest-deals-card .latest-deal-heading a,
+.latest-news-article-heading a {
   color: #111;
   font-size: 1.6rem;
   font-family: inherit;
-  letter-spacing: .2px;
-  transition: all .1s;
+  letter-spacing: 0.2px;
+  transition: all 0.1s;
 }
 
-.latest-deals-card .latest-deal-heading a:hover, .latest-news-article-heading a:hover{
+.latest-deals-card .latest-deal-heading a:hover,
+.latest-news-article-heading a:hover {
   color: #f42;
   text-decoration: underline rgba(255, 83, 34, 0.3);
 }
@@ -422,14 +604,13 @@ border-bottom: 1px solid #fcccc5;
 .latest-deal-value {
   display: flex;
   align-items: center;
-
 }
 
-.latest-deal-value .latest-deal-old-price{
+.latest-deal-value .latest-deal-old-price {
   color: #aaa;
-  text-decoration: line-through; 
+  text-decoration: line-through;
   font-size: 1.3rem;
-  margin-right: .7rem;
+  margin-right: 0.7rem;
   font-weight: normal;
 }
 
@@ -438,36 +619,35 @@ border-bottom: 1px solid #fcccc5;
   font-size: 1.7rem;
 }
 
-
-.latest-deals-card-1 .latest-deal-image a{
+.latest-deals-card-1 .latest-deal-image a {
   background-image: url("https://cdnp0.stackassets.com/91aa0041a1c31e2daa8074c5a64d7d3d942ba825/store/f370dc372f173b2fb63f60eafc441180db6986fafb7508518bbcadb9dc39/sale_19566_primary_image.jpg");
 }
 
-.latest-deals-card-2 .latest-deal-image a{
+.latest-deals-card-2 .latest-deal-image a {
   background-image: url("https://cdnp0.stackassets.com/a659172a9b15de96a1b502d26c5196e0c961b5ba/store/1478a0851c7032d79e041177e133cc8ebd3a740e2cfeff1a77dc32dadc54/sale_19898_primary_image.jpg");
 }
 
-.latest-deals-card-3 .latest-deal-image a{
+.latest-deals-card-3 .latest-deal-image a {
   background-image: url("https://cdnp2.stackassets.com/7467ed773c2aa65269e2af6b4a76ca771714a699/store/b697556c143915c0748db1cccd8553e5328fd4d212a4ad29b60600e3713c/sale_10976_primary_image.jpg");
 }
 
-.latest-deals-card-4 .latest-deal-image a{
+.latest-deals-card-4 .latest-deal-image a {
   background-image: url("https://cdnp1.stackassets.com/6aca4df9cf2f1cf175f1fbc29f8614e891f733b7/store/992819cbbcfc1a56589ebb755ea7f350202685ddd784dfd361613556b596/sale_19942_primary_image.jpg");
 }
 
-.latest-deals-card-5 .latest-deal-image a{
+.latest-deals-card-5 .latest-deal-image a {
   background-image: url("https://cdnp1.stackassets.com/9d07cf31260de67cc7cb2feae4c5f6cb8e875352/store/2db090e3b8c295e1daafb9e25ad6fe17c3a12814b975d447b5ca21eeb9ef/sale_19939_primary_image2.jpg");
 }
 
-.latest-deals-card-6 .latest-deal-image a{
+.latest-deals-card-6 .latest-deal-image a {
   background-image: url("https://cdnp2.stackassets.com/2de045f5c08675c61ee700230f0604fdd2e3e557/store/385003e89ed9c8e0938a35490994921cbd3a1c1ecde92e3f84376549f152/sale_18127_primary_image.jpg");
 }
 
-.latest-deals-card-7 .latest-deal-image a{
+.latest-deals-card-7 .latest-deal-image a {
   background-image: url("https://cdnp0.stackassets.com/b11c1ceea51d735586259e5ad30e9da08c50a3ad/store/066c956b57a2603c49ebdf774b022c1361486789eb9cc2a04559e8804830/sale_19825_primary_image.jpg");
 }
 
-.latest-deals-card-8 .latest-deal-image a{
+.latest-deals-card-8 .latest-deal-image a {
   background-image: url("https://cdnp3.stackassets.com/510e0cc334c331f6c55fa44136342a63628884f9/store/e883e434858ae3d1813b49073997f7eb0a59d1e75176836f550fa70a0e83/sale_19856_primary_image.jpg");
 }
 
@@ -482,19 +662,19 @@ border-bottom: 1px solid #fcccc5;
   justify-content: center;
 }
 
-.footer-top .social-links li{
+.footer-top .social-links li {
   width: 4rem;
   height: 4rem;
   border-radius: 50%;
   background-color: #2f2f2f;
   margin-right: 1.6rem;
   position: relative;
-  transition: all .1s;
+  transition: all 0.1s;
 }
 
-.footer-top .social-links li:hover{
+.footer-top .social-links li:hover {
   background-color: transparent;
-  border: 2px solid rgba(51, 51, 51, .8);
+  border: 2px solid rgba(51, 51, 51, 0.8);
   cursor: pointer;
 }
 
@@ -515,29 +695,28 @@ border-bottom: 1px solid #fcccc5;
   line-height: 1.1;
 }
 
-.footer-top .nav-links li a{
+.footer-top .nav-links li a {
   color: #999;
   text-transform: uppercase;
   font-size: 1.3rem;
   margin-right: 1.7rem;
   font-family: Shentox;
-  transition: all .1s;
-
+  transition: all 0.1s;
 }
-.footer-top .nav-links li:hover a{
-  color: rgba(255,255,255, .8);
+.footer-top .nav-links li:hover a {
+  color: rgba(255, 255, 255, 0.8);
 }
 
-.footer-bottom{
+.footer-bottom {
   padding: 4rem;
   background-color: black;
   color: #999;
   text-align: center;
   font-size: 1.3rem;
-  letter-spacing: .2px;
+  letter-spacing: 0.2px;
 }
 
-.footer-bottom .heart{
+.footer-bottom .heart {
   color: #f42;
 }
 
@@ -552,5 +731,3 @@ border-bottom: 1px solid #fcccc5;
 .footer-bottom .stackpath-logo {
   width: 6.8rem;
 }
-
-
