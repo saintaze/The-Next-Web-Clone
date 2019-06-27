@@ -916,7 +916,7 @@ div.funding-info {
   display: none;
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1024px) {
   .latest-news-articles {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -935,7 +935,7 @@ div.funding-info {
   }
 }
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 768px) {
   /* nav start */
   nav .nav-top,
   nav .nav-bottom .nav-bottom-links {
@@ -1053,5 +1053,15 @@ div.funding-info {
   }
   .footer-bottom {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  nav{
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 9999;
+    background-color: white;
   }
 }
