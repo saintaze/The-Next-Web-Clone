@@ -5,74 +5,774 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>TNW</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
   <nav>
     <ul class="nav-top">
-      <li><a href="">News</a></li>
+      <li><a href="" class="active">News</a></li>
       <li>
         <a href="">Events ▾</a>
-        <ul>
+        <!-- <ul>
           <li><a href="">Hard Fork Decentralized 2019</a></li>
           <li><a href="">TNW Conference 2020</a></li>
-        </ul>
+        </ul> -->
       </li>
       <li>
         <a href="">Business ▾</a>
-        <ul>
+        <!-- <ul>
           <li><a href="">Index</a></li>
           <li><a href="">TNW X</a></li>
-        </ul>
+        </ul> -->
       </li>
       <li><a href="">AMAs</a></li>
       <li><a href="">Spaces</a></li>
       <li><a href="">Terms & Conditions</a></li>
     </ul>
-    <ul class="nav-bottom">
-      <li><a href="">latest</a></li>
-      <li><a href="">hard form</a></li>
-      <li><a href="">plugged</a></li>
-      <li><a href="">fundamnetals</a></li>
-      <li><a href="">work 2030</a></li>
-    </ul>
+    <div class="nav-bottom">
+      <ul class="nav-bottom-links">
+        <li><a href="">latest</a></li>
+        <li><a href="">hard form</a></li>
+        <li><a href="">plugged</a></li>
+        <li><a href="">fundamnetals</a></li>
+        <li><a href="">work 2030</a></li>
+      </ul>
+      <div class="tnw-logo-wrapper">
+        <a href="">
+        <img class="tnw-logo" src="./images/tnw.svg" alt="tnw logo">
+      </a>
+      </div>
+      <div class="right-wrapper">
+      <div class="nav-bottom-search"><i class="fas fa-search"></i></div>
+      <div class="nav-bottom-menu"><i class="fas fa-bars"></i></div>
+    </div>
+    </div>
+    <div class="podcast-promotion">Listen to TNW Conference talks as podcasts on Spotify →</div>
   </nav>
-  <div class="podcast-promotion">Listen to TNW Conference talks as podcasts on Spotify →</div>
   <main>
     <section class="banner-articles">
       <article class="banner-article banner-article-1">
-        <time class="banner-article-date">Thursday — June 20, 2019</time>
-        <h5>World</h5>
-        <h2><a href="">The European Space Agency is building a ‘comet interceptor’ to uncover space secrets</a></h2>
+          <div class="cover-gradient"></div>
+          <div class="cover-logo"></div>
+        <div class="banner-article-date">Thursday — June 20, 2019</div>
+        <header>
+        <h5>GEAR</h5>
+        <h2><a href="">4 cool things you can do with the iOS calculator</a></h2>
         <ul class="banner-article-byline">
           <li>by <a href="">Ivan Mehta</a></li>
-          <li>Clock Icon</li>
+          <li><i class="icon icon--clock--light"></i> </li>
           <li>32 minutes ago</li>
-          <li>SHARE ICON 6</li>
+          <li><i class="icon icon--share--light"></i>  6</li>
         </ul>
+      </header>
       </article>
       <article class="banner-article banner-article-2">
+          <header>
         <h5>Tech</h5>
         <h2><a href="">Keep calm and wank on: UK porn block delayed for the third time</a></h2>
         <ul class="banner-article-byline">
           <li>by <a href="">Cara Curtis</a></li>
-          <li>Clock Icon</li>
+          <li><i class="icon icon--clock--light"></i> </li>
           <li>34 minutes ago</li>
-          <li>SHARE ICON 10</li>
+          <li><i class="icon icon--share--light"></i>0</li>
         </ul>
+      </header>
       </article>
       <article class="banner-article banner-article-3">
+      <header>
           <h5>Insights</h5>
           <h2><a href="">PwC has a new cryptocurrency auditing tool… and actually, it sounds alright</a></h2>
           <ul class="banner-article-byline">
             <li>by <a href="">Matthew Beedham</a></li>
-            <li>Clock Icon</li>
+            <li><i class="icon icon--clock--light"></i> </li>
             <li>1 hour ago</li>
-            <li>SHARE ICON 2</li>
+            <li><i class="icon icon--share--light"></i>2</li>
           </ul>
+        </header>
       </article>
     </section>
-    
+    <section class="central-col">
+      <h2 class="latest-news-heading"><a href="">Latest news <i class="fas fa-chevron-right"></i></a></h2>
+      <section class="latest-news-articles">
+        <article class="latest-news-article latest-news-article-1">
+          <div class="latest-news-article-image"><a href=""></a></div>
+          <header>
+          <h3 class="latest-news-article-heading"><a href="">Excel knowledge can make or break your next job interview; master it for $39</a></h3>
+          <ul class="latest-news-article-byline">
+            <li><a href="">TNW Deals</a></li>
+            <li class="byline-separator">.</li>
+            <li>12 minutes ago</li>
+          </ul>
+        </header>
+        </article> 
+        <article class="latest-news-article latest-news-article-2">
+          <div class="latest-news-article-image"><a href=""></a></div>
+        <header>
+          <h3 class="latest-news-article-heading"><a href="">The new Raspberry Pi 4 is here for just $35</a></h3>
+          <ul class="latest-news-article-byline">
+            <li><a href="">Ivan Mehta</a></li>
+            <li class="byline-separator">.</li>
+            <li>4 hours ago</li>
+          </ul>
+        </header>
+        </article>
+        <article class="latest-news-article latest-news-article-3">
+          <div class="latest-news-article-image"><a href=""></a></div>
+        <header>
+          <h3 class="latest-news-article-heading"><a href="">Why it’s time to drop the dogma and become blockchain rationalists</a></h3>
+          <ul class="latest-news-article-byline">
+            <li><a href="">Vijai Anma</a></li>
+            <li class="byline-separator">.</li>
+            <li>21 hours ago</li>
+          </ul>
+        </header>
+        </article>
+        <article class="latest-news-article latest-news-article-4">
+          <div class="latest-news-article-image"><a href=""></a></div>
+        <header>
+          <h3 class="latest-news-article-heading"><a href="">CHEAP: Get comfy with Logitech's wireless keyboard at 42% off
+            </a></h3>
+          <ul class="latest-news-article-byline">
+            <li><a href="">Ivan Mehta</a></li>
+            <li class="byline-separator">.</li>
+            <li>22 hours ago</li>
+          </ul>
+        </header>
+        </article>
+        <article class="latest-news-article latest-news-article-5">
+          <div class="latest-news-article-image"><a href=""></a></div>
+        <header>
+          <h3 class="latest-news-article-heading"><a href="">This Windows 10 Mini PC takes full processing power anywhere, and it's nearly 50% off</a></h3>
+          <ul class="latest-news-article-byline">
+            <li><a href="">TNW Deals</a></li>
+            <li class="byline-separator">.</li>
+            <li>23 hours ago</li>
+          </ul>
+        </header>
+        </article>
+        <article class="latest-news-article latest-news-article-6">
+          <div class="latest-news-article-image"><a href=""></a></div>
+        <header>
+          <h3 class="latest-news-article-heading"><a href="">Here's how digital forensics experts track down hackers</a></h3>
+          <ul class="latest-news-article-byline">
+            <li><a href="">Binary District Journal</a></li>
+            <li class="byline-separator">.</li>
+            <li>1 day ago</li>
+          </ul>
+        </header>
+        </article>
+        <article class="latest-news-article latest-news-article-7">
+            <div class="latest-news-article-image"><a href=""></a></div>
+          <header>
+            <h3 class="latest-news-article-heading"><a href="">If you don’t know Photoshop or Adobe CC, now’s the time. It’s only $31.</a></h3>
+            <ul class="latest-news-article-byline">
+              <li><a href="">TNW Deals</a></li>
+              <li class="byline-separator">.</li>
+              <li>1 day ago</li>
+            </ul>
+          </header>
+        </article>
+        <article class="latest-news-article latest-news-article-8">
+            <div class="latest-news-article-image"><a href=""></a></div>
+          <header>
+            <h3 class="latest-news-article-heading"><a href="">Alibaba is nudging users to be more ethical with its in-app minigames</a></h3>
+            <ul class="latest-news-article-byline">
+              <li><a href="">Trivium UB</a></li>
+              <li class="byline-separator">.</li>
+              <li>1 day ago</li>
+            </ul>
+          </header>
+        </article>
+      </section>
+      <section class="funding">
+      <div class="funding-info">
+        <h2><a href="">Latest funding rounds on Index.co <i class="fas fa-chevron-right"></i></a></h2>
+        <ul>
+          <li><a href="">Add Info</a></li>
+          <li><a href="">Get updates by email</a></li>
+          <li><a href="">See more</a></li>
+        </ul>
+      </div>
+
+      <div class="funding-stories">
+        <article class="funding-story funding-story-1">
+          <img class="funding-story-logo" src="https://index.tnwcdn.com/images/2e76059785eea074440a624e8d79013df0a69453.png" alt="">
+          <h2>SubjectWell</h2>
+          <div class="funding-round">
+            <div class="funding-amount">$10M</div>
+            <div class="funding-series">series a</div>
+          </div>
+          <div class="investment-card">
+            <div class="investment-card-value-1">
+              <a href="">
+                <div class="investment-icon"><i class="fas fa-tag"></i></div>
+                <div class="investment-valuation">Pharmaceuticals, +2</div>
+              </a>
+            </div>
+            <div class="investment-card-value-2">
+              <a href="">
+                <div class="investment-icon"><i class="fas fa-briefcase"></i></div>
+                <div class="investment-valuation">Windham Venture Partners, +2</div>
+              </a>
+            </div>
+          </div>
+          <div class="investment-achievement">
+            <a href="">SubjectWell nabs $10 mln Series A <span>on PE Hub</span></a>
+          </div>  
+        </article>
+
+        <article class="funding-story funding-story-2">
+          <img class="funding-story-logo" src="https://index.tnwcdn.com/images/6a652bbb8a1a8ee7ac6ed633991a9b1105333b51.png" alt="">
+          <h2>Spring Labs</h2>
+          <div class="funding-round">
+            <div class="funding-amount">$23M</div>
+            <div class="funding-series">series a</div>
+          </div>
+          <div class="investment-card">
+            <div class="investment-card-value-1">
+              <a href="">
+                <div class="investment-icon"><i class="fas fa-tag"></i></div>
+                <div class="investment-valuation">Security</div>
+              </a>
+            </div>
+            <div class="investment-card-value-2">
+              <a href="">
+                <div class="investment-icon"><i class="fas fa-briefcase"></i></div>
+                <div class="investment-valuation">August Capital, +2</div>
+              </a>
+            </div>
+          </div>
+          <div class="investment-achievement">
+            <a href="">General Motors Leads $23M Funding Round for Spring Labs Blockchain Firm <span>on CoinTelegraph </span></a>
+          </div> 
+        </article>
+
+        <article class="funding-story funding-story-3">
+          <img class="funding-story-logo" src="https://index.tnwcdn.com/images/560289d4be5a1539c9e6c8f2bba15eb80a61ebed.jpg" alt="">
+          <h2>Symphony</h2>
+          <div class="funding-round">
+            <div class="funding-amount">$165M</div>
+            <div class="funding-series">series e</div>
+          </div>
+          <div class="investment-card">
+            <div class="investment-card-value-1">
+              <a href="">
+                <div class="investment-icon"><i class="fas fa-tag"></i></div>
+                <div class="investment-valuation">Messaging, +4</div>
+              </a>
+            </div>
+            <div class="investment-card-value-2">
+              <a href="">
+                <div class="investment-icon"><i class="fas fa-briefcase"></i></div>
+                <div class="investment-valuation">Standard Chartered Bank</div>
+              </a>
+            </div>
+          </div>
+          <div class="investment-achievement">
+            <a href="">US-based collaboration platform Symphony bags $165m to expand into Asia <span>on Tech in Asia </span></a>
+          </div> 
+        </article>
+
+        <article class="funding-story funding-story-4">
+          <img class="funding-story-logo" src="https://index.tnwcdn.com/images/be17d6d4a637e935624f0501647b27e8807d93db.jpg" alt="">
+          <h2>Buyandship</h2>
+          <div class="funding-round">
+            <div class="funding-amount">$2.2M</div>
+            <div class="funding-series">series a</div>
+          </div>
+          <div class="investment-card">
+            <div class="investment-card-value-1">
+              <a href="">
+                <div class="investment-icon"><i class="fas fa-tag"></i></div>
+                <div class="investment-valuation">E-Commerce, +3</div>
+              </a>
+            </div>
+            <div class="investment-card-value-2">
+              <a href="">
+                <div class="investment-icon"><i class="fas fa-briefcase"></i></div>
+                <div class="investment-valuation">Infinity Venture Partners</div>
+              </a>
+            </div>
+          </div>
+          <div class="investment-achievement">
+            <a href="">Ecommerce shipping startup banks $2.2m in pre-series B round <span>on Tech in Asia</span></a>
+          </div> 
+        </article>
+
+      </div>
+    </section>
+      <section class="news-cards">
+
+        <section class="news-card news-card-1">
+          <h2 class="news-card-heading"><a href="">Apps  <i class="fas fa-chevron-right"></i></a></h2>
+          <header class="news-card-header">
+            <h5>MOST POPULAR</h5>
+            <h3><a href="">Harry Potter: Wizards Unite launches early -- here are our first impressions</a></h3>
+            <div class="news-card-byline">
+              Rachel Kaser <span>11 hours ago</span>
+            </div>
+          </header>
+          <div class="news-card-flash">
+            <div class="flash-wrapper">
+              <h5>LATEST</h5>
+              <h3 class="news-card-flash-header">
+              <a href="">Report: Google Maps hosts 'millions' of fake business listings</a>  
+              </h3>
+            </div>
+            <div class="news-card-image"><a href=""></a></div>
+          </div>
+          <ul class="news-feed">
+            <li>
+              <a href="">Netflix's 'Project Rumble Pak' tests vibrating mobile movies</a>
+            </li>
+            <li>
+              <a href="">Harry Potter: Wizards Unite launches early -- here are our first impressions</a>
+            </li>
+            <li>
+              <a href="">YouTube is testing hiding comments in its Android app</a>
+            </li>
+            <li>
+              <a href="">Google's new extension will help you report dubious sites with a click</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="news-card news-card-2">
+          <h2 class="news-card-heading"><a href="">Gear  <i class="fas fa-chevron-right"></i></a></h2>
+          <header class="news-card-header">
+            <h5>MOST POPULAR</h5>
+            <h3><a href="">YouTuber leaks Mac Pro cheese-grating performance with disappointing results</a></h3>
+            <div class="news-card-byline">
+              Napier Lopez <span>5 hours ago</span>
+            </div>
+          </header>
+          <div class="news-card-flash">
+            <div class="flash-wrapper">
+              <h5>LATEST</h5>
+              <h3 class="news-card-flash-header">
+              <a href="">Google will no longer make tablets, but Chrome OS lives on</a>  
+              </h3>
+            </div>
+            <div class="news-card-image"><a href=""></a></div>
+          </div>
+          <ul class="news-feed">
+            <li>
+              <a href="">CHEAP: Get $150 off this Samsung Galaxy S4 Tab and S-Pen combo</a>
+            </li>
+            <li>
+              <a href="">Kano’s next computer kit is a $300 Windows convertible laptop for kids</a>
+            </li>
+            <li>
+              <a href="">Samsung exec says "most" of the Galaxy Fold's display problems have been fixed</a>
+            </li>
+            <li>
+              <a href="">The new Kindle Oasis' adjustable hue makes night reading much easier</a>
+            </li>
+            <li>
+              <a href="">Samsung is reportedly preparing to launch its Galaxy Note 10 in August</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="news-card news-card-3">
+          <h2 class="news-card-heading"><a href="">Tech  <i class="fas fa-chevron-right"></i></a></h2>
+          <header class="news-card-header">
+            <h5>MOST POPULAR</h5>
+            <h3><a href="">Dell patches vulnerability that put millions of PCs at risk — Update yours now</a></h3>
+            <div class="news-card-byline">
+              Ravie Lakshaman <span>6 hours ago</span>
+            </div>
+          </header>
+          <div class="news-card-flash">
+            <div class="flash-wrapper">
+              <h5>LATEST</h5>
+              <h3 class="news-card-flash-header">
+              <a href="">Ew, your laptop is disgusting — here’s how to clean it</a>  
+              </h3>
+            </div>
+            <div class="news-card-image"><a href=""></a></div>
+          </div>
+          <ul class="news-feed">
+            <li>
+              <a href="">How to share your Wi-Fi password as a QR code on iOS</a>
+            </li>
+            <li>
+              <a href="">Report: Google Maps hosts 'millions' of fake business listings</a>
+            </li>
+            <li>
+              <a href="">Dell patches vulnerability that put millions of PCs at risk — Update yours now</a>
+            </li>
+            <li>
+              <a href="">We ranked Google's new search icons by how evil they look</a>
+            </li>
+            <li>
+              <a href="">Keep calm and wank on: UK porn block delayed for the third time</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="news-card news-card-4">
+          <h2 class="news-card-heading"><a href="">Creative  <i class="fas fa-chevron-right"></i></a></h2>
+          <header class="news-card-header">
+            <h5>MOST POPULAR</h5>
+            <h3><a href="">Sorry, but you can’t copyright a meme</a></h3>
+            <div class="news-card-byline">
+              Tristan Greene <span>22 days ago</span>
+            </div>
+          </header>
+          <div class="news-card-flash">
+            <div class="flash-wrapper">
+              <h5>LATEST</h5>
+              <h3 class="news-card-flash-header">
+              <a href="">A peek at legendary architect John Storyk's design process</a>  
+              </h3>
+            </div>
+            <div class="news-card-image"><a href=""></a></div>
+          </div>
+          <ul class="news-feed">
+            <li>
+              <a href="">Watch: Sony made a God of War documentary as good as the game</a>
+            </li>
+            <li>
+              <a href="">Who are the creators of AI-generated art — programmers or machines?</a>
+            </li>
+            <li>
+              <a href="">A Twitter bot that translates jungle sounds to existential questions might just help save the rainforest</a>
+            </li>
+            <li>
+              <a href="">A Q&A with Roland CEO Jun-ichi Miki on innovation, Waku Waku, and 'sleeping musicians'</a>
+            </li>
+            <li>
+              <a href="">AI rejects conservative human views on furniture, designs wacky chair</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="news-card news-card-5">
+          <h2 class="news-card-heading"><a href="">Podium  <i class="fas fa-chevron-right"></i></a></h2>
+          <header class="news-card-header">
+            <h5>MOST POPULAR</h5>
+            <h3><a href="">An entrepreneur's guide to Indonesia's startup scene</a></h3>
+            <div class="news-card-byline">
+              Conrad Egusa <span>15 hours ago</span>
+            </div>
+          </header>
+          <div class="news-card-flash">
+            <div class="flash-wrapper">
+              <h5>LATEST</h5>
+              <h3 class="news-card-flash-header">
+              <a href="">Alternates to passwords: 11 ways to safeguard logins to websites or programs</a>  
+              </h3>
+            </div>
+            <div class="news-card-image"><a href=""></a></div>
+          </div>
+          <ul class="news-feed">
+            <li>
+              <a href="">An entrepreneur's guide to Indonesia's startup scene</a>
+            </li>
+            <li>
+              <a href="">How to pick the best approach to data science (fyi, there are three)</a>
+            </li>
+            <li>
+              <a href="">EU lawmakers need to look beyond the ‘top layer’ when regulating the internet</a>
+            </li>
+            <li>
+              <a href="">The unforeseen trouble AI is now causing</a>
+            </li>
+            <li>
+              <a href="">4 mistakes companies make when expanding overseas</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="news-card news-card-6">
+          <h2 class="news-card-heading"><a href="">Insights  <i class="fas fa-chevron-right"></i></a></h2>
+          <header class="news-card-header">
+            <h5>MOST POPULAR</h5>
+            <h3><a href="">Mozilla fixes second Firefox zero-day bug used in Coinbase hack attempts</a></h3>
+            <div class="news-card-byline">
+              David Canellis <span>1 hours ago</span>
+            </div>
+          </header>
+          <div class="news-card-flash">
+            <div class="flash-wrapper">
+              <h5>LATEST</h5>
+              <h3 class="news-card-flash-header">
+              <a href="">Bitcoin wallets aren't addresses — a secret guide for embarrassed crypto noobs</a>  
+              </h3>
+            </div>
+            <div class="news-card-image"><a href=""></a></div>
+          </div>
+          <ul class="news-feed">
+            <li>
+              <a href="">Mozilla fixes second Firefox zero-day bug used in Coinbase hack attempts</a>
+            </li>
+            <li>
+              <a href="">5 easy steps to achieve Inbox Zero</a>
+            </li>
+            <li>
+              <a href="">We ranked Google's new search icons by how evil they look</a>
+            </li>
+            <li>
+              <a href="">Bitcoin healthy AF following Zuckbuck reveal, hash rate hits all-time high</a>
+            </li>
+            <li>
+              <a href="">Unique multi-platform Monero mining malware targets audio engineer pirates</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="news-card news-card-7">
+          <h2 class="news-card-heading"><a href="">Launch  <i class="fas fa-chevron-right"></i></a></h2>
+          <header class="news-card-header">
+            <h5>MOST POPULAR</h5>
+            <h3><a href="">Bethesda wants you to test its game streaming tech with DOOM on iOS this year</a></h3>
+            <div class="news-card-byline">
+                Abhimanyu Ghoshal <span>11 hours ago</span>
+            </div>
+          </header>
+          <div class="news-card-flash">
+            <div class="flash-wrapper">
+              <h5>LATEST</h5>
+              <h3 class="news-card-flash-header">
+              <a href="">Mozilla rolls out new automated crypto-jacking filtering in Firefox</a>  
+              </h3>
+            </div>
+            <div class="news-card-image"><a href=""></a></div>
+          </div>
+          <ul class="news-feed">
+            <li>
+              <a href="">Google announces Stadia, its cross-platform game streaming service</a>
+            </li>
+            <li>
+              <a href="">Binance will let you buy Bitcoin with cash from 1,300 stores in Australia</a>
+            </li>
+            <li>
+              <a href="">YouTube Music launches in India to battle it out with Spotify et al</a>
+            </li>
+            <li>
+              <a href="">Ballsy mobile devs can now monetize their games with cryptocurrency</a>
+            </li>
+            <li>
+              <a href="">Harley-Davidson debuts its all-electric 'LiveWire' motorcycle at CES</a>
+            </li>
+          </ul>
+        </section>
+
+        <section class="news-card news-card-8">
+            <h2 class="news-card-heading"><a href="">Distract  <i class="fas fa-chevron-right"></i></a></h2>
+            <header class="news-card-header">
+              <h5>MOST POPULAR</h5>
+              <h3><a href="">EA rep calls loot boxes 'surprise mechanics' -- no, just no</a></h3>
+              <div class="news-card-byline">
+                  Rachel Kaser <span>17 hours ago</span>
+              </div>
+            </header>
+            <div class="news-card-flash">
+              <div class="flash-wrapper">
+                <h5>LATEST</h5>
+                <h3 class="news-card-flash-header">
+                <a href="">We ranked Google's new search icons by how evil they look</a>  
+                </h3>
+              </div>
+              <div class="news-card-image"><a href=""></a></div>
+            </div>
+            <ul class="news-feed">
+              <li>
+                <a href="">Spy thriller game Alpha Protocol mysteriously vanishes from Steam</a>
+              </li>
+              <li>
+                <a href="">Hilarious robot revenge video parodies Boston Dynamics</a>
+              </li>
+              <li>
+                <a href="">A Super Mario battle royale should not be this addictive</a>
+              </li>
+              <li>
+                <a href="">Wikipedia titles you can sing to the 'Teenage Mutant Ninja Turtles' theme song, tweeted</a>
+              </li>
+              <li>
+                <a href="">New Avengers game hints at a Marvel Gaming Universe</a>
+              </li>
+            </ul>
+        </section>
+        </section>
+      <section class="latest-deals">
+        <div class="latest-deals-heading">
+          <h2><a href="">Latest deals <i class="fas fa-chevron-right"></i></a></h2>
+          <h3><a href="">See all Deals</a></h3>
+        </div>
+        <div class="latest-deals-cards">
+          <article class="latest-deals-card latest-deals-card-1">
+            <div class="latest-deal-image">
+              <a href=""></a>
+              <div class="discount-banner">
+                <div class="discount-banner-text">96% OFF</div>
+              </div>
+            </div>
+            <header>
+            <h3 class="latest-deal-heading">
+              <a href="">EpicPxls Design Assets Premium Plan: Lifetime subscription</a>
+            </h3>
+            <div class="latest-deal-value">
+              <div class="latest-deal-old-price">$2400</div>
+              <div class="latest-deal-new-price">$99</div>
+            </div>
+          </header>
+          </article>
+
+          <article class="latest-deals-card latest-deals-card-2">
+            <div class="latest-deal-image">
+              <a href=""></a>
+              <div class="discount-banner">
+                <div class="discount-banner-text">97% OFF</div>
+              </div>
+            </div>
+            <header>
+            <h3 class="latest-deal-heading">
+              <a href="">The Ultimate UI & UX Designer Bundle</a>
+            </h3>
+            <div class="latest-deal-value">
+              <div class="latest-deal-old-price">$800</div>
+              <div class="latest-deal-new-price">$24</div>
+            </div>
+          </header>
+          </article>
+
+          <article class="latest-deals-card latest-deals-card-3">
+            <div class="latest-deal-image">
+              <a href=""></a>
+              <div class="discount-banner">
+                <div class="discount-banner-text">93% OFF</div>
+              </div>
+            </div>
+            <header>
+            <h3 class="latest-deal-heading">
+              <a href="">The Complete Presentation and Public Speaking Course</a>
+            </h3>
+            <div class="latest-deal-value">
+              <div class="latest-deal-old-price">$20</div>
+              <div class="latest-deal-new-price">$14.99</div>
+            </div>
+          </header>
+          </article>
+
+          <article class="latest-deals-card latest-deals-card-4">
+            <div class="latest-deal-image">
+              <a href=""></a>
+              <div class="discount-banner">
+                <div class="discount-banner-text">78% OFF</div>
+              </div>
+            </div>
+          <header>
+            <h3 class="latest-deal-heading">
+              <a href="">The Complete YouTube Master Class</a>
+            </h3>
+            <div class="latest-deal-value">
+              <div class="latest-deal-old-price">$49</div>
+              <div class="latest-deal-new-price">$11</div>
+            </div>
+          </header>
+          </article>
+
+          <article class="latest-deals-card latest-deals-card-5">
+            <div class="latest-deal-image">
+              <a href=""></a>
+              <div class="discount-banner">
+                <div class="discount-banner-text">99% OFF</div>
+              </div>
+            </div>
+          <header>
+            <h3 class="latest-deal-heading">
+              <a href="">The Complete Amazon FBA A-Z Bundle</a>
+            </h3>
+            <div class="latest-deal-value">
+              <div class="latest-deal-old-price">$2691</div>
+              <div class="latest-deal-new-price">$29</div>
+            </div>
+          </header>
+          </article>
+
+          <article class="latest-deals-card latest-deals-card-6">
+            <div class="latest-deal-image">
+              <a href=""></a>
+              <div class="discount-banner">
+                <div class="discount-banner-text">95% OFF</div>
+              </div>
+            </div>
+          <header>
+            <h3 class="latest-deal-heading">
+              <a href="">Complete Microsoft Azure Certification Prep Bundle 2019</a>
+            </h3>
+            <div class="latest-deal-value">
+              <div class="latest-deal-old-price">$387</div>
+              <div class="latest-deal-new-price">$19</div>
+            </div>
+          </header>
+          </article>
+
+          <article class="latest-deals-card latest-deals-card-7">
+            <div class="latest-deal-image">
+              <a href=""></a>
+              <div class="discount-banner">
+                <div class="discount-banner-text">47% OFF</div>
+              </div>
+            </div>
+          <header>
+            <h3 class="latest-deal-heading">
+              <a href="">The Award-Winning Luminar 3 Software Bundle</a>
+            </h3>
+            <div class="latest-deal-value">
+              <div class="latest-deal-old-price">$93</div>
+              <div class="latest-deal-new-price">$49</div>
+            </div>
+          </header>
+          </article>
+
+          <article class="latest-deals-card latest-deals-card-8">
+            <div class="latest-deal-image">
+              <a href=""></a>
+              <div class="discount-banner">
+                <div class="discount-banner-text">87% OFF</div>
+              </div>
+            </div>
+          <header>
+            <h3 class="latest-deal-heading">
+              <a href="">Moovly Video Maker Pro Plan: Lifetime Subscription</a>
+            </h3>
+            <div class="latest-deal-value">
+              <div class="latest-deal-old-price">$1495</div>
+              <div class="latest-deal-new-price">$199</div>
+            </div>
+          </header>
+          </article>
+        </div>
+      </section>
+
   </main>
+  <footer>
+    <div class="footer-top">
+      <ul class="social-links">
+        <li><a href=""><i class="fab fa-facebook-square"></i></a></li>
+        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+        <li><a href=""><i class="fab fa-youtube"></i></a></li>
+        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+        <li><a href=""><i class="fab fa-pinterest-p"></i></a></li>
+        <li><a href=""><i class="fas fa-rss"></i></a></li>
+        <li><a href=""><i class="fas fa-envelope"></i></a></li>
+      </ul>
+      <ul class="nav-links">
+        <li><a href="">events</a></li>
+        <li><a href="">about</a></li>
+        <li id="team-link"><a href="">team</a></li>
+        <li><a href="">advertise</a></li>
+        <li><a href="">jobs</a></li>
+        <li><a href="">contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-bottom">
+     <div><a href=""><img class="tnw-logo" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/tnw.svg" alt="tnw logo"></a>  © 2006–2019 The Next Web B.V.</div> <div> Made with <span class="heart">♥</span> in Amsterdam.</div> <div> Powered by <a href=""><img class="stackpath-logo" src="https://cdn0.tnwcdn.com/wp-content/themes/cyberdelia/assets/img/stackpath.svg" alt=""></a> </div>
+    </div>
+  </footer>
 </body>
 </html>

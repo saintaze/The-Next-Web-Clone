@@ -15,4 +15,3 @@ URL: [The Next Web](https://thenextweb.com/)
 
 # Preview
 [Live Version](https://the-next-web-clone.imhta.now.sh)
-
