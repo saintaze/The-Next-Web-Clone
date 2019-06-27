@@ -1064,4 +1064,8 @@ div.funding-info {
     z-index: 9999;
     background-color: white;
   }
+
+  .funding-story{
+    width: 100%;
+  }
 }
