@@ -159,7 +159,7 @@ nav .nav-top .active {
 /* banner started */
 .banner-articles {
   display: grid;
-  height: 80vh;
+  height: 74vh;
   max-height: 544px;
   grid-template-columns: 2fr 1fr;
   grid-template-areas:
@@ -208,12 +208,14 @@ nav .nav-top .active {
 }
 
 .banner-article-1 .banner-article-date {
-  color: white;
+  color: rgba(255, 255, 255, 0.9);
   font-family: Maquetteregular;
-  font-size: 14px;
+  font-size: 13px;
   position: absolute;
   top: 16px;
   right: 24px;
+  font-weight: normal;
+  letter-spacing: 0.4px;
 }
 .banner-article-1 header {
   bottom: 4px;
@@ -239,19 +241,30 @@ nav .nav-top .active {
 }
 .banner-article-byline {
   display: flex;
+  font-weight: light;
+  align-items: center;
   list-style: none;
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: .6rem;
 }
-.banner-article-byline a {
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.6);
-}
+
 .banner-article-byline a:hover {
   color: rgba(255, 255, 255);
 }
+
+.fa-share-alt {
+  font-size: 1.7rem;
+  color: rgba(255, 255, 255, .6) !important;
+}
+
+.fa-clock, .fa-share-alt {
+  font-size: 1.7rem;
+  color: rgba(255, 255, 255, .7);
+}
+
 .banner-article-byline li {
-  margin-left: 4px;
+  margin-left: 6px;
 }
 .banner-article-byline li .icon {
   float: left;
@@ -306,8 +319,8 @@ nav .nav-top .active {
 .banner-article-1 .banner-article-byline a,
 .banner-article-2 .banner-article-byline a,
 .banner-article-3 .banner-article-byline a {
-  font-size: 12px;
-  color: rgba(255, 255, 255, 0.6);
+  font-size: 13px;
+  color: rgba(255, 255, 255, 0.5);
 }
 .banner-article-1 .banner-article-byline a:hover,
 .banner-article-2 .banner-article-byline a:hover,
@@ -318,6 +331,11 @@ nav .nav-top .active {
 main .central-col {
   max-width: 80vw;
   margin: 0 auto;
+  margin-top: 5rem;
+}
+
+.news-card-heading {
+  margin-bottom: 1rem;
 }
 
 .latest-news-article-image a {
@@ -517,12 +535,15 @@ div.funding-info {
 .news-cards {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-column-gap: 2.4rem;
   margin: 20px 0px;
+  margin-top: 4.5rem;
 }
 .news-card {
   margin-bottom: 24px;
 }
+
+
 .news-card .news-card-header {
   display: flex;
   flex-direction: column;
@@ -533,16 +554,24 @@ div.funding-info {
 }
 .news-card .news-card-header a {
   text-decoration: none;
-  color: white;
+    color: #f7f7f7;
+    font-size: 2rem;
+    font-weight: 100;
+    letter-spacing: .4px;
+    word-spacing: 2px;
 }
 .news-card .news-card-header h5 {
   font-family: Shentox;
-  font-size: 14px;
+  font-size: 12px;
+  color: #eee;
+  letter-spacing: .4px; 
+
 }
 .news-card .news-card-header h3 {
   font-family: Avalon-Bold;
   font-size: 20px;
   line-height: 1.1;
+  margin: .4rem 0 .5rem;
 }
 .news-card .news-card-header .news-card-byline {
   display: flex;
@@ -597,13 +626,12 @@ div.funding-info {
 .news-card-flash {
   display: flex;
   justify-content: space-between;
-  height: 96px;
   margin: 2px 0px;
   background-color: rgba(255, 68, 34, 0.06);
 }
 .flash-wrapper {
   width: 100%;
-  padding: 10px 14px 0px;
+  padding: 10px 14px 1.2rem;
 }
 .news-card-flash h5,
 .news-card-flash h3 {
@@ -611,15 +639,41 @@ div.funding-info {
   width: 100%;
   color: #f42;
 }
+
+.news-card-flash h3 {
+  margin-top: .2rem;
+}
+
+.news-card-flash h3 a:hover {
+color: #f42;
+text-decoration: underline rgba(255, 83, 34, 0.3); 
+}
+
+.news-card-flash h5 {
+
+  font-size: 13px;
+  font-family: Shentox,sans-serif;
+  letter-spacing: .2px;
+}
+
+.news-card-header h3 a:hover {
+  text-decoration: underline rgba(192,192,192, .4);
+
+}
+
 .news-card-flash h3 a {
   font-size: 14px;
   width: 100%;
   color: #f42;
   line-height: 1.1;
+  font-weight: normal;
 }
 .news-card-flash .news-card-image {
-  width: 96px;
-  height: 96px;
+  width: 11rem;
+}
+
+.news-card-5 .news-card-image, .news-card-6 .news-card-image {
+  width: 13rem;
 }
 
 .news-card-1 .news-card-flash .news-card-image {
@@ -670,14 +724,19 @@ div.funding-info {
   padding-left: 12px;
 }
 .news-feed li {
-  padding: 6px 0px 6px 14px;
+  padding: 6px 0px 6px ;
   border-bottom: solid 1px rgba(228, 228, 228, 0.6);
+  line-height: 1.3;
 }
 .news-feed a {
   text-decoration: none;
-  color: #555;
+  color: #777;
   font-size: 13px;
   font-family: Maquetteregular;
+}
+
+.news-feed a:hover {
+  color: #000;
 }
 
 .latest-deals-heading .fa-chevron-right,
@@ -689,7 +748,7 @@ div.funding-info {
 
 .latest-deals .latest-deals-heading,
 .latest-news-heading,
-.news-card-heading,
+
 .funding-info {
   margin: 1.8rem 0;
 }
