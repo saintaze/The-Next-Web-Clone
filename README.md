@@ -10,7 +10,7 @@ This is a Next Web clone.
 + CSS3
 
 # Live Version
-[The Next Web](https://the-next-web-clone.imhta.now.sh)
+URL: [The Next Web](https://the-next-web-clone.imhta.now.sh)
 
 # Authors
 + Saintaze [@saintaze](https://github.com/saintaze/)
